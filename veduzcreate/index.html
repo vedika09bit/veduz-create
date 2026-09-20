@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Veduz Creates | Handmade Bouquets & Personalized Gifts</title>
+    <meta name="description" content="Veduz Creates offers beautiful handmade pipe-cleaner bouquets, personalized gifts, flower pots, money bouquets and handcrafted creations made with love.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+    <a href="#home" class="logo-area">
+        <img src="images/logo.png" alt="Veduz Creates">
+        <div><strong>Veduz Creates</strong><span>HANDMADE WITH LOVE</span></div>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#bouquets" class="nav-link">Collection</a>
+        <a href="#about" class="nav-link">Our Story</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#cart" class="nav-link">Bag <span id="cartCount">0</span></a>
+        <a href="#contact" class="nav-link nav-contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</header>
+
+<main>
+<section id="home" class="hero">
+    <div class="hero-bg-floral"></div>
+    
+    <!-- 3 FLOATING BOXES - FROM 2ND THEME -->
+    <div class="hero-float-box box1">
+        <div class="box-icon">🌷</div>
+        <h4>Pink Rose Bouquet</h4>
+        <span>From ₹99</span>
+    </div>
+    <div class="hero-float-box box2">
+        <div class="box-icon">💐</div>
+        <h4>Mixed Bouquet</h4>
+        <span>Most Loved</span>
+    </div>
+    <div class="hero-float-box box3">
+        <div class="box-icon">💸</div>
+        <h4>Money Bouquet</h4>
+        <span>Special Edition</span>
+    </div>
+
+    <!-- 1ST THEME PINK CARD - CENTER -->
+    <div class="hero-pink-card">
+        <div class="hero-badge-pink">✨ HANDMADE WITH LOVE ✨</div>
+        <h1>More Than Just a Bouquet<br><span>You choose the occasion.<br>We create the emotion.</span></h1>
+        <div class="hero-divider">✦ <span></span> ✦</div>
+        <p><strong>We don't just create bouquets... <span>we create emotions.</span> ❤️</strong><br><br>
+        Every flower is carefully handmade with patience, creativity, and love — transforming simple pipe cleaners into beautiful keepsakes that last.</p>
+        <div class="hero-bottom-bar">
+            <span class="flower-icon">🌸</span>
+            <div><strong>You choose the occasion.</strong><br><span>We create the emotion.</span></div>
+            <span class="flower-icon">🌸</span>
+        </div>
+        <div class="hero-actions-pink">
+            <a href="#bouquets" class="btn-pink">Explore Collection →</a>
+            <a href="#about" class="btn-white-pink">Our Story 💗</a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="about-message">
+        <span class="section-mini-title">OUR LITTLE STORY</span>
+        <h2>Handmade isn't just a product.<br><span>It's a feeling.</span></h2>
+        <p>At Veduz Creates, every flower is carefully handmade, every bouquet is thoughtfully arranged and every gift is created to carry a special emotion.</p>
+        <p>From birthdays and anniversaries to small moments of happiness, we create something that feels personal.</p>
+    </div>
+</section>
+
+<section id="bouquets" class="products-section">
+    <div class="section-heading"><span class="section-mini-title">SHOP OUR CREATIONS</span><h2>Made For Your Special Moments 🌸</h2><p>Pick something beautiful or create your own special gift.</p></div>
+    <div class="search-wrapper"><input type="text" id="searchInput" placeholder="Search bouquets, gifts, flowers..." onkeyup="searchBouquets()"><span>🔍</span></div>
+    <div class="product-grid" id="productGrid">
+        <article class="product-card" data-name="Money Bouquet"><div class="product-image"><img src="images/butterfly bouquet.jpeg" alt="Money Bouquet"><span class="product-badge">SPECIAL</span></div><div class="product-info"><h3>Money Bouquet</h3><p>A beautiful handmade money bouquet, perfect for gifting.</p><div class="product-bottom"><strong>₹199</strong><button onclick="addToCart('Money Bouquet',199,'images/butterfly bouquet.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Money Rakhi"><div class="product-image"><img src="images/rakhi.jpeg" alt="Rakhi"><span class="product-badge">SPECIAL</span></div><div class="product-info"><h3>Money Rakhi</h3><p>A unique handmade Rakhi gift.</p><div class="product-bottom"><strong>₹499</strong><button onclick="addToCart('Money Rakhi',499,'images/rakhi.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Hibiscus Garland"><div class="product-image"><img src="images/hibiscus garland.jpeg" alt="Garland"><span class="product-badge">NEW</span></div><div class="product-info"><h3>Pink Hibiscus Pooja Garland</h3><p>Handmade floral garland for special occasions.</p><div class="product-bottom"><strong>₹299</strong><button onclick="addToCart('Pink Hibiscus Pooja Garland',299,'images/hibiscus garland.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Lavender Pot"><div class="product-image"><img src="images/lavender pot.jpeg" alt="Lavender Pot"></div><div class="product-info"><h3>Lavender Bloom Pot</h3><p>A cute handmade flower pot for your space.</p><div class="product-bottom"><strong>₹299</strong><button onclick="addToCart('Lavender Bloom Pot',299,'images/lavender pot.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Lily Pot"><div class="product-image"><img src="images/lily pot.jpeg" alt="Lily Pot"></div><div class="product-info"><h3>Pastel Lily Pot</h3><p>Soft pastel handmade lily arrangement.</p><div class="product-bottom"><strong>₹299</strong><button onclick="addToCart('Pastel Lily Pot',299,'images/lily pot.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Rose Pot"><div class="product-image"><img src="images/rose pot.jpeg" alt="Rose Pot"></div><div class="product-info"><h3>Pastel Rose Pot</h3><p>Handmade pastel rose decoration.</p><div class="product-bottom"><strong>₹299</strong><button onclick="addToCart('Pastel Rose Pot',299,'images/rose pot.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Rose"><div class="product-image"><img src="images/rose.jpeg" alt="Rose"></div><div class="product-info"><h3>Pink Rose Bouquet</h3><p>A timeless handmade rose bouquet.</p><div class="product-bottom"><strong>₹99</strong><button onclick="addToCart('Pink Rose Bouquet',99,'images/rose.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Sunflower"><div class="product-image"><img src="images/sunflower.jpeg" alt="Sunflower"></div><div class="product-info"><h3>Sunflower Bouquet</h3><p>Bright handmade sunflowers for happy moments.</p><div class="product-bottom"><strong>₹149</strong><button onclick="addToCart('Sunflower Bouquet',149,'images/sunflower.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Lavender"><div class="product-image"><img src="images/lavender.png" alt="Lavender"></div><div class="product-info"><h3>Lavender Bouquet</h3><p>Elegant handmade lavender flowers.</p><div class="product-bottom"><strong>₹59</strong><button onclick="addToCart('Lavender Bouquet',59,'images/lavender.png')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Lily"><div class="product-image"><img src="images/lily.jpeg" alt="Lily"></div><div class="product-info"><h3>White Lily Bouquet</h3><p>Elegant handmade white lilies.</p><div class="product-bottom"><strong>₹150</strong><button onclick="addToCart('White Lily Bouquet',150,'images/lily.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Tulip"><div class="product-image"><img src="images/tulip.jpeg" alt="Tulip"></div><div class="product-info"><h3>Tulip Bouquet</h3><p>Beautiful handmade tulips for gifting.</p><div class="product-bottom"><strong>₹120</strong><button onclick="addToCart('Tulip Bouquet',120,'images/tulip.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Mixed"><div class="product-image"><img src="images/mixed bouquet.png" alt="Mixed"><span class="product-badge">POPULAR</span></div><div class="product-info"><h3>Mixed Flower Bouquet</h3><p>A colourful combination of handmade flowers.</p><div class="product-bottom"><strong>₹499</strong><button onclick="addToCart('Mixed Flower Bouquet',499,'images/mixed bouquet.png')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Premium"><div class="product-image"><img src="images/premium.jpeg" alt="Premium"><span class="product-badge">PREMIUM</span></div><div class="product-info"><h3>Premium Gift Bouquet</h3><p>A special handmade gift for special people.</p><div class="product-bottom"><strong>₹399</strong><button onclick="addToCart('Premium Gift Bouquet',399,'images/premium.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Sword"><div class="product-image"><img src="images/sword.png" alt="Sword"></div><div class="product-info"><h3>Handmade Sword</h3><p>Creative handmade decorative piece.</p><div class="product-bottom"><strong>₹49</strong><button onclick="addToCart('Handmade Sword',49,'images/sword.png')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Charm"><div class="product-image"><img src="images/hair charm.jpeg" alt="Charm"></div><div class="product-info"><h3>Flower Charm</h3><p>Cute handmade floral accessory.</p><div class="product-bottom"><strong>₹59</strong><button onclick="addToCart('Flower Charm',59,'images/hair charm.jpeg')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Pot"><div class="product-image"><img src="images/pot.png" alt="Pot"></div><div class="product-info"><h3>Mini Handmade Flower Pot</h3><p>A tiny handmade floral decoration.</p><div class="product-bottom"><strong>₹99</strong><button onclick="addToCart('Mini Handmade Flower Pot',99,'images/pot.png')">Add to Cart</button></div></div></article>
+        <article class="product-card" data-name="Kitchen"><div class="product-image"><img src="images/kitchen.jpeg" alt="Kitchen"></div><div class="product-info"><h3>Mini Handmade Flower Pot 2</h3><p>Another cute handmade creation.</p><div class="product-bottom"><strong>₹99</strong><button onclick="addToCart('Mini Handmade Flower Pot 2',99,'images/kitchen.jpeg')">Add to Cart</button></div></div></article>
+    </div>
+</section>
+
+<section id="reviews" class="reviews-section">
+    <div class="reviews-heading"><span>💗 CUSTOMER LOVE</span><h2>What Our Customers Say</h2><p>Every review makes Veduz Creates even more special 🌸</p></div>
+    <div class="review-live-bar"><div class="live-dot"></div><span>Real customer reviews</span><span class="review-count"><strong id="reviewCount">0</strong> reviews</span></div>
+    <div id="reviewsContainer" class="reviews-container"></div>
+    <div class="review-form-card">
+        <div class="review-form-header"><div class="review-icon">🌷</div><div><h3>Share Your Experience</h3><p>We'd love to hear from you 💕</p></div></div>
+        <form id="reviewForm">
+            <label>Your Name</label><input type="text" id="reviewName" placeholder="Enter your name" required>
+            <label>Your Photo <span>(Optional)</span></label>
+            <div class="photo-upload" id="photoUpload"><input type="file" id="reviewPhoto" accept="image/jpeg,image/png,image/webp" hidden><div class="upload-content" id="uploadContent"><div class="upload-icon">📷</div><p>Drag & Drop your photo</p><span>or</span><button type="button" id="choosePhoto">Choose Photo</button><small>JPG, PNG or WEBP</small></div><img id="photoPreview" class="photo-preview" alt="preview"><button type="button" id="removePhoto" style="display:none">Remove ✕</button></div>
+            <label>Your Rating</label><select id="reviewRating" required><option value="">Select rating</option><option value="5">⭐⭐⭐⭐⭐ — Excellent</option><option value="4">⭐⭐⭐⭐ — Very Good</option><option value="3">⭐⭐⭐ — Good</option><option value="2">⭐⭐ — Okay</option><option value="1">⭐ — Needs Improvement</option></select>
+            <label>Your Review</label><textarea id="reviewComment" placeholder="Tell us about your experience..." rows="5" required></textarea>
+            <button type="submit" class="submit-review-btn">⭐ Submit Review</button><p id="reviewMessage" class="review-message"></p>
+        </form>
+    </div>
+</section>
+
+<section id="cart" class="cart-section">
+    <div class="section-heading"><span class="section-mini-title">YOUR BAG</span><h2>Your Handmade Collection 🛍️</h2></div>
+    <div id="cartItems" class="cart-items"><div class="empty-cart"><div>🛍️</div><h3>Your cart is empty</h3><p>Add something beautiful</p><a href="#bouquets" class="primary-btn">Explore Products</a></div></div>
+    <div class="cart-summary"><div><span>Total</span><strong id="cartTotal">₹0</strong></div></div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="section-heading"><span class="section-mini-title">LET'S CREATE SOMETHING SPECIAL</span><h2>Place Your Order 💌</h2><p>Fill your details and we'll connect with you on WhatsApp.</p></div>
+    <div class="order-card">
+        <label>Your Name</label><input type="text" id="customerName" placeholder="Your name">
+        <label>Phone Number</label><input type="tel" id="customerPhone" placeholder="Your phone number">
+        <label>Delivery Address</label><textarea id="customerAddress" rows="4" placeholder="Complete delivery address"></textarea>
+        <label>Payment Method</label><div class="payment-options"><label><input type="radio" name="payment" value="COD" checked> Cash on Delivery</label><label><input type="radio" name="payment" value="UPI"> UPI</label></div>
+        <button class="whatsapp-order-btn" onclick="orderWhatsApp()">💬 Order on WhatsApp</button>
+    </div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div class="footer-brand"><h2>Veduz Creates 🌸</h2><p>Handmade with love, created for your special moments.</p></div><div class="footer-links"><a href="#home">Home</a><a href="#bouquets">Bouquets</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div><div class="footer-social"><a href="https://instagram.com/" target="_blank">📸 Instagram</a><a href="https://wa.me/917021478998" target="_blank">💬 WhatsApp</a></div></div><div class="footer-bottom">© 2026 Veduz Creates · Handmade With Love 💗</div></footer>
+<div id="toast" class="toast">Added to cart 💗</div>
+<script src="script.js"></script>
+</body>
+</html>
